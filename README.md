@@ -25,11 +25,9 @@ Para instalar java 17:
 
 Para instalar maven:
 
-`sudo wget https://repos.fedorapeople.org/repos/dchen/apache-maven/epel-apache-maven.repo -O /etc/yum.repos.d/epel-apache-maven.repo`
 
-`sudo sed -i s/\$releasever/6/g /etc/yum.repos.d/epel-apache-maven.repo`
+`sudo dnf install maven`
 
-`sudo yum install -y apache-maven`
 
 Usando nuestro editor de código, abrimos el proyecto y modificamos el archivo com.arep.loadBalancer.Invoker.java, y cambiamos las direcciones IP de las máquinas virtuales de AWS por las direcciones IP o el DNS público IPv4 de nuestras instancias de EC2. - En proceso
 
@@ -41,7 +39,7 @@ En este caso, una VM será para el servicio proxy y las otras dos (o más) será
 
 Y nos dirigimos al directorio creado con
 
-`cd Parcial2-AREP`
+`cd Parcial2`
 
 ## Creación del proyecto con mvn y spring
 
@@ -49,6 +47,28 @@ Este proyecto se creo haciendo uso de Spring Initializr, para construir la base 
 
 Desde el link: `https://spring.io/guides/gs/rest-service`
 
+## Ejecutando la aplicación
 
+Para ejecutar la aplicación, primero debemos compilar el proyecto con el siguiente comando `mvn clean install`
+. Esto nos permitirá limpiar las construcciones previas de otras versiones y luego compilará el proyecto.
+
+#### Local
+
+Abrimos una terminal y ejecutamos el siguiente comando:
+```
+  java -cp "target/classes/;target/dependency/*" com.arep.search.MathService
+```
+
+Abrimos otra terminal y ejecutamos el siguiente comando:
+```
+  java -cp "target/classes/;target/dependency/*" com.arep.loadBalancer.ProxyService
+```
+
+Para visualizar la aplicación, escogemos algún navegador e ingresamos la URL http://localhost:8080/ en la barra de direcciones. Allí encontraremos
+el formulario donde se podrá ingresar la lista de números, el número a buscar y seleccionar el algoritmo de búsqueda deseado.
+El siguiente es un ejemplo de cómo se vería la aplicación en el navegador.
+
+
+Y en la consola del servicio proxy, podemos ver la comprobación de que se están realizando las peticiones a los servicios de ordenamiento.
 
 

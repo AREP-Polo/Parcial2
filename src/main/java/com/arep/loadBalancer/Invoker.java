@@ -1,4 +1,4 @@
-package edu.arep.loadBalancer;
+package com.arep.loadBalancer;
 
 import java.io.BufferedReader;
 import java.io.IOException;
@@ -13,8 +13,8 @@ public class Invoker {
     private static final String NAVEGADOR = "Mozilla/5.0";
 
     static final List<String> SERVIDORES_DISPONIBLES = Arrays.asList(
-                                                                "http://ec2-54-175-14-122.compute-1.amazonaws.com:4567",
-                                                                "http://ec2-3-95-37-130.compute-1.amazonaws.com:4567"
+                                                                "http://ec2-13-218-231-248.compute-1.amazonaws.com:4567",
+                                                                "http://ec2-52-23-235-185.compute-1.amazonaws.com:4567"
                                                     );
     static int indiceActual = 0;
 

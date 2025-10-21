@@ -1,7 +1,5 @@
-package edu.arep.search;
+package com.arep.search;
 
-import static edu.arep.search.Search.binarySearch;
-import static edu.arep.search.Search.linearSearch;
 import static spark.Spark.*;
 
 

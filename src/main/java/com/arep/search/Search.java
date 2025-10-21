@@ -1,4 +1,4 @@
-package edu.arep.search;
+package com.arep.search;
 import java.util.ArrayList;
 import java.util.List;
 import org.json.JSONObject;
