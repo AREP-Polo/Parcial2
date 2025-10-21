@@ -1,7 +1,6 @@
 package com.arep.loadBalancer;
 
 import static spark.Spark.*;
-import static spark.Spark.get;
 
 public class ProxyService {
 

@@ -1,8 +1,5 @@
 package com.arep.search;
 
-import static spark.Spark.*;
-
-
 public class MathService
 {
     public static int lucas(int n) {

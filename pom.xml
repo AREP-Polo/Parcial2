@@ -9,9 +9,9 @@
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
 	<groupId>com.arep</groupId>
-	<artifactId>parcial</artifactId>
+	<artifactId>search</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	<name>parcial</name>
+	<name>search</name>
 	<description>Parcial 2 for AREP</description>
 	<url/>
 	<licenses>
