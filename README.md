@@ -78,6 +78,14 @@ Acceder desde el navegador usando la IP pública o DNS de la instancia del proxy
 
 ## Video de Demostración
 
+### Video de Demostración
+
+Se incluye un video de demostración del despliegue y funcionamiento de la aplicación:
+
+### Video de demostración
+
+[Ver demostración](./video.mp4)
+
 ## Notas Técnicas
 
 - El proxy utiliza variables de entorno del sistema operativo para configurar las direcciones IP y puertos de las instancias del servicio matemático.
